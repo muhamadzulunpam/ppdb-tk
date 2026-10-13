@@ -1,6 +1,6 @@
 @extends('admin.layouts.main')
 
-@section('contaner')
+@section('container')
                 <!-- Kolom Kanan (8 dari 12) -->
                 <div class="md:w-9/12 bg-white p-6 rounded shadow-2xl">
                     <div class="flex justify-between items-center mb-4">

@@ -1,6 +1,6 @@
 @extends('admin.layouts.main')
 
-@section('contaner')
+@section('container')
 
    <div class="md:w-11/12 bg-white p-6 rounded shadow-2xl">
     <h2 class="text-2xl font-bold mb-6 text-pink-600">Detail Pendaftaran Anak</h2>
