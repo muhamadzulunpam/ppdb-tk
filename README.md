@@ -1,66 +1,212 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎓 PPDB TK Mardi Tama
 
+Aplikasi web Penerimaan Peserta Didik Baru (PPDB) untuk TK Mardi Tama. Aplikasi ini membantu calon orang tua siswa memperoleh informasi sekolah dan mendaftar secara online.
+
+Dibangun dengan **Laravel**, **Blade Template**, **CSS**, dan **JavaScript**, dengan fokus pada kemudahan penggunaan, tampilan responsif, dan struktur kode yang mudah dipelihara.
+
+---
+
+## 📸 Preview Aplikasi
+
+### Halaman Utama
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="docs/screenshots/homepage.png" alt="Halaman utama PPDB TK Mardi Tama" width="800">
 </p>
 
-## About Laravel
+### Formulir Pendaftaran
+<p align="center">
+  <img src="docs/screenshots/registration.png" alt="Formulir pendaftaran peserta didik" width="800">
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Halaman Admin
+<p align="center">
+  <img src="docs/screenshots/admin.png" alt="Galeri kegiatan sekolah" width="800">
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Fitur Utama
 
-## Learning Laravel
+- **Beranda**: informasi utama dan pengenalan sekolah.
+- **Profil Sekolah**: informasi mengenai sekolah.
+- **Galeri Kegiatan**: dokumentasi kegiatan dengan filter kategori.
+- **Formulir Pendaftaran**: formulir PPDB dengan beberapa langkah pengisian.
+- **Informasi Pendaftaran**: biaya dan alur pendaftaran.
+- **Kontak Sekolah**: informasi kontak dan akses WhatsApp.
+- **Navigasi Responsif**: menu untuk desktop dan perangkat mobile.
+- **Tanggal Hari Ini**: tanggal ditampilkan pada halaman.
+- **Popup Poster**: poster informasi sekolah.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🛠️ Teknologi
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Teknologi | Kegunaan |
+|---|---|
+| PHP | Bahasa pemrograman backend |
+| Laravel | Framework aplikasi web |
+| Blade Template | Template halaman |
+| HTML | Struktur halaman |
+| CSS | Styling dan tata letak |
+| JavaScript | Interaksi frontend |
+| Git | Version control |
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 📂 Struktur Proyek
 
-### Premium Partners
+```text
+project-ppdb/
+├── app/
+├── public/
+├── resources/
+│   ├── css/
+│   │   ├── app.css
+│   │   └── ppdb.css
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── main.js
+│   │   └── ppdb.js
+│   └── views/
+│       ├── layouts/
+│       │   └── app.blade.php
+│       ├── partials/
+│       │   ├── navbar.blade.php
+│       │   └── footer.blade.php
+│       └── ppdb/
+│           └── index.blade.php
+├── routes/
+│   └── web.php
+├── docs/
+│   └── screenshots/
+│       ├── homepage.png
+│       ├── gallery.png
+│       └── registration.png
+├── .env.example
+├── composer.json
+├── package.json
+└── README.md
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+---
 
-## Contributing
+## 🧹 Refactoring Frontend
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Struktur frontend dirapikan agar kode lebih mudah dibaca dan dikembangkan:
 
-## Code of Conduct
+- CSS dipisahkan dari file Blade ke stylesheet tersendiri.
+- JavaScript halaman PPDB dipisahkan ke `ppdb.js`.
+- JavaScript navigasi dan interaksi antarmuka dikelompokkan di `main.js`.
+- Event listener diinisialisasi dengan `DOMContentLoaded`.
+- Logika navbar, menu mobile, dan filter galeri dikelompokkan.
+- Logika tampilan tanggal dipisahkan dari template Blade.
+- Navigasi formulir pendaftaran dan popup poster tetap berfungsi.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🚀 Instalasi dan Menjalankan Proyek
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 1. Clone repository
 
-## License
+```bash
+git clone https://github.com/muhamadzulsaban/ppdb-tk-mardi-tama.git
+cd ppdb-tk-mardi-tama
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 2. Instal dependensi backend
+
+```bash
+composer install
+```
+
+### 3. Siapkan environment
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Pada Windows, `.env.example` juga bisa disalin manual menjadi `.env`.
+
+### 4. Konfigurasi database
+
+Sesuaikan pengaturan di file `.env`, lalu buat database dengan nama yang sama:
+
+```dotenv
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 5. Jalankan migrasi
+
+```bash
+php artisan migrate
+```
+
+### 6. Instal dependensi frontend
+
+```bash
+npm install
+npm run dev
+```
+
+Untuk build produksi:
+
+```bash
+npm run build
+```
+
+### 7. Jalankan aplikasi
+
+```bash
+php artisan serve
+```
+
+Buka `http://127.0.0.1:8000` di browser.
+
+---
+
+## 🧪 Checklist Pengujian
+
+- [ ] Halaman utama tampil dengan benar.
+- [ ] Navigasi desktop dan mobile berfungsi.
+- [ ] Filter galeri menampilkan kategori yang dipilih.
+- [ ] Tanggal hari ini tampil.
+- [ ] Formulir pendaftaran dapat berpindah langkah.
+- [ ] Popup poster dapat ditutup.
+- [ ] Tombol WhatsApp mengarah ke nomor yang benar.
+- [ ] Validasi dan pengiriman formulir berjalan sesuai implementasi backend.
+- [ ] Tidak ada error JavaScript di browser.
+
+---
+
+## 🔒 Keamanan
+
+- Jangan mengunggah file `.env` ke repository publik.
+- Jangan mencantumkan password database, API key, atau token rahasia.
+- Lakukan validasi data pendaftaran di backend.
+- Validasi tipe dan ukuran file jika formulir menerima unggahan dokumen.
+
+---
+
+## 🗺️ Rencana Pengembangan
+
+- Meningkatkan validasi formulir pendaftaran.
+- Menyempurnakan pengelolaan data pendaftar.
+- Meningkatkan aksesibilitas dan pengalaman pengguna.
+- Menambahkan pengujian otomatis untuk fitur penting.
+- Mengoptimalkan performa halaman dan aset frontend.
+- Melakukan deployment agar aplikasi dapat diakses online.
+
+---
+
+## 👨‍💻 Developer
+
+**Muhamad Zul Sa'ban**
+
+- GitHub: [@muhamadzulsaban](https://github.com/muhamadzulsaban)
+- Repository: [ppdb-tk-mardi-tama](https://github.com/muhamadzulsaban/ppdb-tk-mardi-tama)
