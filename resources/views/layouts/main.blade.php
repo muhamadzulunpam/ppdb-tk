@@ -15,185 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <style>
-        :where([class^="ri-"])::before { content: "\f3c2"; }
-        
-        body {
-            font-family: 'Nunito', sans-serif;
-        }
-        
-        .hero-section {
-            background-image: url('https://readdy.ai/api/search-image?query=Cheerful%20cartoon%20illustration%20of%20diverse%20children%20playing%20in%20a%20colorful%20playground%20with%20soft%20pastel%20colors.%20The%20left%20side%20has%20a%20soft%20gradient%20background%20in%20light%20blue%20that%20smoothly%20transitions%20to%20the%20right%20side%20showing%20happy%20children%20playing.%20The%20illustration%20style%20is%20cute%20and%20child-friendly%20with%20rounded%20shapes%20and%20soft%20edges%2C%20perfect%20for%20a%20kindergarten%20website.&width=1200&height=600&seq=1&orientation=landscape');
-            background-size: cover;
-            background-position: center;
-        }
-        
-        input[type="number"]::-webkit-inner-spin-button,
-        input[type="number"]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        
-        .custom-checkbox {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        
-        .custom-checkbox input {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-        }
-        
-        .checkmark {
-            height: 24px;
-            width: 24px;
-            background-color: #fff;
-            border: 2px solid #E3F2FD;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .custom-checkbox input:checked ~ .checkmark {
-            background-color: #4F86F7;
-            border-color: #4F86F7;
-        }
-        
-        .checkmark:after {
-            content: "";
-            display: none;
-        }
-        
-        .custom-checkbox input:checked ~ .checkmark:after {
-            display: block;
-            width: 6px;
-            height: 12px;
-            border: solid white;
-            border-width: 0 2px 2px 0;
-            transform: rotate(45deg);
-        }
-        
-        .custom-switch {
-            position: relative;
-            display: inline-block;
-            width: 52px;
-            height: 26px;
-        }
-        
-        .custom-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #E3F2FD;
-            transition: .4s;
-            border-radius: 34px;
-        }
-        
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 18px;
-            width: 18px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
-        
-        input:checked + .slider {
-            background-color: #4F86F7;
-        }
-        
-        input:checked + .slider:before {
-            transform: translateX(26px);
-        }
-        
-        .custom-radio {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        
-        .custom-radio input {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-        }
-        
-        .radio-mark {
-            height: 24px;
-            width: 24px;
-            background-color: #fff;
-            border: 2px solid #E3F2FD;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .custom-radio input:checked ~ .radio-mark {
-            border-color: #4F86F7;
-        }
-        
-        .radio-mark:after {
-            content: "";
-            display: none;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #4F86F7;
-        }
-        
-        .custom-radio input:checked ~ .radio-mark:after {
-            display: block;
-        }
-        
-        .tab-active {
-            background-color: #4F86F7;
-            color: white;
-        }
-        
-        .gallery-item:hover .gallery-overlay {
-            opacity: 1;
-        }
-        nav a.active span {
-        color: #0ea5e9; /* Tailwind's primary or custom */
-        }
-        nav a.active i {
-        color: #0ea5e9;
-        }
-        @keyframes bounce {
-        0%, 100% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-10px);
-        }
-        }
-
-        .animate-bounce {
-        animation: bounce 1.5s infinite;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
 <body class="bg-[#FCFCFC]">
 
   @include('layouts.sidebar')
 
-    @yield('contaner')
+    @yield('container')
     
     <!-- Footer -->
     <footer class="bg-[#2C3E50] text-white pt-12 pb-6">
@@ -261,91 +90,20 @@
                             <div class="w-5 h-5 flex-shrink-0 flex items-center justify-center mt-1 mr-3">
                                 <i class="ri-mail-line"></i>
                             </div>
-                            <span class="text-gray-300">tkkmarditama@gmail.com</span>
+                            <span class="text-gray-300">tkmarditama@gmail.com</span>
                         </li>
                     </ul>
                 </div>
             </div>
             
             <div class="pt-6 border-t border-gray-700 text-center text-gray-400 text-sm">
-                <p>&copy; 2025 IT Cyber Community. Hak Cipta Dilindungi.</p>
+                <p>&copy; 2025 Muhamad Zul Sa'ban. Hak Cipta Dilindungi.</p>
             </div>
         </div>
     </footer>
-    
 
+<script src="{{ asset('js/main.js') }}"></script>
 
-    <script>
-            document.addEventListener('DOMContentLoaded', function () {
-            const navLinks = document.querySelectorAll('nav a');
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', function () {
-                // Hapus class active dari semua link
-                navLinks.forEach(el => el.classList.remove('active'));
-                // Tambahkan class active ke link yang diklik
-                this.classList.add('active');
-                });
-            });
-            });
-        </script>
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Menu Toggle
-            const menuButton = document.getElementById('menuButton');
-            const mobileMenu = document.getElementById('mobileMenu');
-            
-            menuButton.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
-                if (mobileMenu.classList.contains('hidden')) {
-                    menuButton.innerHTML = '<i class="ri-menu-line text-primary"></i>';
-                } else {
-                    menuButton.innerHTML = '<i class="ri-close-line text-primary"></i>';
-                }
-            });
-            
-            // Close mobile menu when clicking on a link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.add('hidden');
-                    menuButton.innerHTML = '<i class="ri-menu-line text-primary"></i>';
-                });
-            });
-        });
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            // Gallery Filter
-            const galleryFilters = document.querySelectorAll('.gallery-filter');
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            
-            galleryFilters.forEach(filter => {
-                filter.addEventListener('click', function() {
-                    // Remove active class from all filters
-                    galleryFilters.forEach(f => {
-                        f.classList.remove('tab-active');
-                        f.classList.add('text-[#555]');
-                    });
-                    
-                    // Add active class to clicked filter
-                    this.classList.add('tab-active');
-                    this.classList.remove('text-[#555]');
-                    
-                    const filterValue = this.getAttribute('data-filter');
-                    
-                    // Show/hide gallery items based on filter
-                    galleryItems.forEach(item => {
-                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
-            });
-        });
-    </script>
 </body>
 </html>
 

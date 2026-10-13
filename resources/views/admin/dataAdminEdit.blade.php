@@ -1,6 +1,6 @@
 @extends('admin.layouts.main')
 
-@section('contaner')
+@section('container')
 <div class="md:w-9/12 bg-white p-6 rounded shadow-2xl">
     <div class="flex justify-between items-center mb-4">
         <h2 class="text-2xl font-bold">Edit Data Admin</h2>

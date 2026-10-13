@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('contaner')
+@section('container')
 
 
     <!-- POP-UP WRAPPER -->
@@ -54,7 +54,7 @@
             
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="{{asset ('assets/img/menggambar bersama.jpeg')}}" alt="Ruang Kelas TK Ceria Bunda" class="rounded-2xl shadow-lg w-full h-auto object-cover">
+                    <img src="{{asset ('assets/img/menggambar bersama.jpeg')}}" alt="Ruang Kelas TK Mardi Tama" class="rounded-2xl shadow-lg w-full h-auto object-cover">
                 </div>
                 <div>
                     <h3 class="text-2xl font-bold text-[#333] mb-6">Visi & Misi</h3>
@@ -239,7 +239,7 @@
                             <i class="ri-star-fill"></i>
                         </div>
                     </div>
-                    <p class="text-[#555]">"Anak saya sangat senang bersekolah di TK Ceria Bunda. Guru-gurunya ramah dan sabar dalam mendampingi anak-anak. Saya melihat perkembangan yang pesat pada kemampuan sosial dan kognitif anak saya."</p>
+                    <p class="text-[#555]">"Anak saya sangat senang bersekolah di TK Mardi Tama. Guru-gurunya ramah dan sabar dalam mendampingi anak-anak. Saya melihat perkembangan yang pesat pada kemampuan sosial dan kognitif anak saya."</p>
                 </div>
                 
                 <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
@@ -261,7 +261,7 @@
                             <i class="ri-star-half-fill"></i>
                         </div>
                     </div>
-                    <p class="text-[#555]">"Fasilitas di TK Ceria Bunda sangat lengkap dan terawat dengan baik. Program pembelajarannya juga sangat menarik dan sesuai dengan perkembangan anak. Anak saya jadi lebih mandiri dan percaya diri."</p>
+                    <p class="text-[#555]">"Fasilitas di TK Mardi Tama sangat lengkap dan terawat dengan baik. Program pembelajarannya juga sangat menarik dan sesuai dengan perkembangan anak. Anak saya jadi lebih mandiri dan percaya diri."</p>
                 </div>
                 
                 <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
@@ -283,7 +283,7 @@
                             <i class="ri-star-fill"></i>
                         </div>
                     </div>
-                    <p class="text-[#555]">"Saya sangat puas dengan pendidikan di TK Ceria Bunda. Guru-gurunya profesional dan komunikatif dalam memberikan laporan perkembangan anak. Lingkungan belajarnya juga aman dan nyaman."</p>
+                    <p class="text-[#555]">"Saya sangat puas dengan pendidikan di TK Mardi Tama. Guru-gurunya profesional dan komunikatif dalam memberikan laporan perkembangan anak. Lingkungan belajarnya juga aman dan nyaman."</p>
                 </div>
             </div>
         </div>
@@ -592,74 +592,5 @@
             </div>
         </div>
     </section>
-
-    <script>
-        document.getElementById('kirimWhatsapp').addEventListener('click', function () {
-            const nama = document.getElementById('nama').value;
-            const email = document.getElementById('email').value;
-            const telepon = document.getElementById('telepon').value;
-            const pesan = document.getElementById('pesan').value;
-
-            const nomorWa = "6281234567890"; // Ganti dengan nomor WA tujuan, format internasional tanpa + dan tanpa 0
-
-            const url = `https://wa.me/${+6281318986448}?text=` + 
-                encodeURIComponent(
-        `Halo, saya ingin menghubungi Anda:
-
-        Nama: ${nama}
-        Email: ${email}
-        No. Telepon: ${telepon}
-        Pesan: ${pesan}
-        `);
-
-            window.open(url, '_blank'); // Buka di tab baru
-        });
-    </script>
-
-    <script>
-        function nextStep(step) {
-            // Sembunyikan semua step konten (jika ada)
-            document.querySelectorAll('.step').forEach(function(el) {
-                el.classList.add('hidden');
-            });
-
-            // Tampilkan konten step aktif
-            const currentStep = document.getElementById('step-' + step);
-            if (currentStep) currentStep.classList.remove('hidden');
-
-            // Reset semua dot dan line
-            for (let i = 1; i <= 3; i++) {
-                const dot = document.getElementById('dot-' + i);
-                dot.classList.remove('bg-primary', 'text-white');
-                dot.classList.add('bg-gray-300', 'text-gray-600');
-
-                const line = document.getElementById('line-' + (i - 1));
-                if (line) {
-                    line.classList.remove('bg-primary');
-                    line.classList.add('bg-gray-300');
-                }
-            }
-
-            // Aktifkan kembali dot dan line sesuai step
-            for (let i = 1; i <= step; i++) {
-                const dot = document.getElementById('dot-' + i);
-                dot.classList.add('bg-primary', 'text-white');
-                dot.classList.remove('bg-gray-300', 'text-gray-600');
-
-                const line = document.getElementById('line-' + (i - 1));
-                if (line) {
-                    line.classList.add('bg-primary');
-                    line.classList.remove('bg-gray-300');
-                }
-            }
-        }
-    </script>
-        <script>
-            function closePopup() {
-                document.getElementById("popupPoster").style.display = "none";
-            }
-        </script>
-
-   
-
+    <script src="{{ asset('js/ppdb.js') }}"></script>
 @endsection

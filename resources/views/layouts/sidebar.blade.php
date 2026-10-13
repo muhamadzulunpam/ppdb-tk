@@ -46,6 +46,7 @@
                         <i class="ri-shield-user-line text-white"></i>
                     </div>
                     <span class="text-sm font-semibold">Admin</span>
+                </a>
                 <a href="{{ route('logout') }}" class="flex flex-col items-center text-[#333] hover:text-primary transition-colors">
                     <div class="w-10 h-10 flex items-center justify-center rounded-full shadow-sm mb-1" style="background-color: #00b0f6 !important;">
                         <i class="ri-logout-box-r-line text-white"></i>
